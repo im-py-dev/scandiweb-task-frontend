@@ -1,0 +1,12 @@
+.footer {
+  background: linear-gradient(to right, #000000, hsl(0deg 0% 0% / 90%));
+  text-align: center;
+  color: #fff;
+  font-family: cursive;
+  font-size: x-large;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,51 @@
+
+.header {
+height: 250px; /* Set the fixed height */
+background: url('https://scandiweb.com/blog/wp-content/uploads/2018/02/sw_team-min-2-1600x708.jpeg') center center no-repeat; /* Set the background image */
+background-size: cover; /* Make the background image cover the entire element */
+position: relative; /* Make the element position relative so we can use absolute positioning for the overlay */
+}
+
+.overlay{
+position: absolute; /* Position the pseudo-element absolutely */
+top: 0; /* Position the pseudo-element at the top of the element */
+left: 0; /* Position the pseudo-element at the left of the element */
+width: 100%; /* Set the width of the pseudo-element to 100% */
+height: 100%; /* Set the height of the pseudo-element to 100% */
+background-color: rgb(40 6 6 / 75%); /* Set the overlay color */
+background-color: rgb(3 8 40 / 75%); /* Set the overlay color */
+}
+
+.header h1 {
+position: absolute; /* Position the heading absolutely */
+top: 50%; /* Position the heading at the center of the element vertically */
+left: 50%; /* Position the heading at the center of the element horizontally */
+transform: translate(-50%, -50%); /* Center the heading using the transform property */
+margin: 0; /* Remove the margin from the heading */
+color: #fff; /* Set the color of the heading */
+text-align: center; /* Center the text horizontally */
+}  
+
+.scandiweb{
+position: absolute;
+top: 2em;
+width: 100%;
+text-align: center!important;
+}
+
+.scandiweb div{
+font-size: 1em;
+color: #ffffff;
+}
+
+.scandiweb a{
+font-size: 1.2em!important;
+//font-family: cursive;
+font-family: Proximanova,sans-serif;
+font-size: 44px;
+font-weight: 700;
+line-height: 24px;
+-webkit-text-stroke: 1px #ffffff;
+color: #e04f4f;
+text-decoration: none;
+}

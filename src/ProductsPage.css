@@ -1,0 +1,24 @@
+.hr-broder{
+	border-color: #6c757d; border-width: 2px;
+}
+
+.card img{
+	max-height: 135px;
+	object-fit: cover;
+	object-position: center; 
+}
+.form-check input{
+	width: 1.3em;
+	height: 1.3em;
+}
+.card label{
+	float: left;
+}
+
+.form-check{
+	display: inline;
+}
+
+.price{
+	float: right;
+}
