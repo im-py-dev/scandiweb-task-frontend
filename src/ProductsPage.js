@@ -54,8 +54,8 @@ const handleMassDeleteClick = () => {
   return (
     <div className="productsPage">
 	
-		<div className="row p-3 d-flex justify-content-between align-items-center">
-			<h1 className="mb-3 col-sm-6 col-md-8">Products List</h1>
+		<div className="row p-3 m-0 align-items-center">
+			<h1 className="col-sm-6 col-md-8">Products List</h1>
 			<div className="col-sm-6 col-md-4">
 				<a href="/add-product" type="button" className="btn btn-lg btn-dark d-none d-lg-inline-block mr-2">Add Product</a>
 				<a href="/add-product" className="btn btn-lg btn-dark d-inline-block d-lg-none mr-2">Add</a>
