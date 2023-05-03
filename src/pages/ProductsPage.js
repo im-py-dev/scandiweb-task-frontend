@@ -9,7 +9,7 @@ function ProductList() {
   const [skusToDelete, setSkusToDelete] = useState([]);
 
   useEffect(() => {
-    axios.get('https://scandiweb.technosteps.com/get_products.php')
+    axios.get('https://scandiweb.technosteps.com/api/get_products.php')
       .then(res => setProducts(res.data))
       .catch(err => console.log(err));
   }, []);
@@ -30,7 +30,7 @@ const handleMassDeleteClick = () => {
     const formData = new FormData();
     formData.append('skusToDelete', JSON.stringify(skusToDelete));
 
-    fetch('https://scandiweb.technosteps.com/delete_products.php', {
+    fetch('https://scandiweb.technosteps.com/api/delete_products.php', {
       method: 'POST',
       body: formData
     })

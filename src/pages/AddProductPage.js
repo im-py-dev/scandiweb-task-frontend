@@ -91,7 +91,7 @@ const handleInvalid = (e) => {
 
     console.log(productToSend);
 
-    fetch('https://scandiweb.technosteps.com/add-product/', {
+    fetch('https://scandiweb.technosteps.com/api/add_product.php', {
       method: 'POST',
       body: JSON.stringify(productToSend),
       headers: {
@@ -345,7 +345,7 @@ function getAlertClass(status) {
 			<button type="button" className="cancel-btn btn btn-outline-danger btn-lg border-2"
 			onClick={() => { window.location.href = "/"; }}>Cancel</button>
         </div>
-		<div id="notifications" class={`alert text-center  my-4 ${getAlertClass(formStatus)}`} role="alert" style={{display: formStatus ? 'block' : 'none'}}></div>
+		<div id="notifications" className={`alert text-center  my-4 ${getAlertClass(formStatus)}`} role="alert" style={{display: formStatus ? 'block' : 'none'}}></div>
       </form>
     </div>
     </div>
