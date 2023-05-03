@@ -16,6 +16,7 @@ const AddProduct = () => {
   });
   
   const [description, setDescription] = useState('');
+  const [formStatus, setFormStatus] = useState('');
 
   const inputs = [
     {
@@ -51,11 +52,10 @@ const AddProduct = () => {
   ];
 
 
-const showMessage = (message, color = "black") => {
+const showMessage = (message, class_name = "alert-success") => {
     const notifications = document.getElementById('notifications');
     notifications.innerText = message;
-    notifications.style.color = color;
-    notifications.style.display = "block";
+
 }
 
 const handleInvalid = (e) => {
@@ -102,7 +102,8 @@ const handleInvalid = (e) => {
       if (response.ok) {
         return response.json()
           .then(result => {
-            showMessage(result.message, "green");
+			  setFormStatus("success");
+            showMessage(result.message);
             setTimeout(() => {
               window.location.href = '/';
             }, 700);
@@ -111,7 +112,8 @@ const handleInvalid = (e) => {
       } else {
         return response.json()
           .then(result => {
-            showMessage(result.error, "red");
+			  setFormStatus("error");
+            showMessage(result.error);
           });
       }
     })
@@ -124,6 +126,7 @@ const handleInvalid = (e) => {
 	const { name, value } = e.target;
     setProduct({ ...product, [name]: value });
 	document.getElementById('notifications').innerText = "";
+	setFormStatus("");
 	
 	if (name === 'productType') {
       switch (value) {
@@ -141,6 +144,17 @@ const handleInvalid = (e) => {
       }
     }
   };
+
+function getAlertClass(status) {
+  if (status === 'success') {
+    return 'alert alert-success';
+  } else if (status === 'error') {
+    return 'alert alert-danger';
+  } else {
+    return 'alert';
+  }
+}
+
 
   return (
     <div className="Test">
@@ -331,7 +345,7 @@ const handleInvalid = (e) => {
 			<button type="button" className="cancel-btn btn btn-outline-danger btn-lg border-2"
 			onClick={() => { window.location.href = "/"; }}>Cancel</button>
         </div>
-		<div id="notifications"></div>
+		<div id="notifications" class={`alert text-center  my-4 ${getAlertClass(formStatus)}`} role="alert" style={{display: formStatus ? 'block' : 'none'}}></div>
       </form>
     </div>
     </div>
