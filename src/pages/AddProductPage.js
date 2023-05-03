@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormInput from "../components/FormInput";
+import "../styles/AddProductsPage.css";
 
 
 const AddProduct = () => {
@@ -339,10 +340,10 @@ function getAlertClass(status) {
         </>
       )}
 
-		<div className="gap-2 mt-4">
-			<button type="submit" className="save-btn btn btn-lg">Save</button>
+		<div className="mt-4">
+			<button type="submit" className="save-btn btn btn-lg me-1">Save</button>
 
-			<button type="button" className="cancel-btn btn btn-outline-danger btn-lg border-2"
+			<button type="button" className="cancel-btn btn btn-outline-danger btn-lg border-2  ms-1"
 			onClick={() => { window.location.href = "/"; }}>Cancel</button>
         </div>
 		<div id="notifications" className={`alert text-center  my-4 ${getAlertClass(formStatus)}`} role="alert" style={{display: formStatus ? 'block' : 'none'}}></div>

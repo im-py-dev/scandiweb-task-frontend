@@ -1,0 +1,17 @@
+.container{
+	min-height: 60vh;
+}
+
+.save-btn{
+    background-color: black!important;
+    color: #FFF!important;
+	min-width: 50%
+}
+
+.save-btn:hover{
+    background-color: #0a0c20!important;
+}
+
+.cancel-btn{
+    min-width: 45%
+}
