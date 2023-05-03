@@ -149,7 +149,7 @@ const handleInvalid = (e) => {
 		<div className="container">
 			<div className="row justify-content-center">
 			<div className="col-sm-12 col-md-8 my-4">
-	  <form className="w-100 p-4 border rounded" onSubmit={handleSubmit}>
+	  <form id="product_form" className="w-100 p-4 border rounded" onSubmit={handleSubmit}>
         <h2>
 			<div className="text-center mb-4">
 				Add Product
