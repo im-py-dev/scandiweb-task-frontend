@@ -23,7 +23,7 @@ function Footer() {
 		<div>
 			<span>
 			Made With ❤️ By &nbsp;
-				<a id="impydev" href="https://github.com/im-py-dev" target="_blank" style={{ color: linkColor }}>
+				<a id="impydev" href="https://github.com/im-py-dev/scandiweb-task" target="_blank" style={{ color: linkColor }}>
 					<i className="bi bi-github"></i> ImPyDev
 				</a>
 			</span>
