@@ -327,16 +327,10 @@ const handleInvalid = (e) => {
       )}
 
 		<div className="gap-2 mt-4">
-			<button type="submit" className="save-btn btn btn-lg">
-
-				Save
-			</button>
+			<button type="submit" className="save-btn btn btn-lg">Save</button>
 
 			<button type="button" className="cancel-btn btn btn-outline-danger btn-lg border-2"
-			onClick={() => { window.location.href = "/"; }}>
-
-				Cancel
-			</button>
+			onClick={() => { window.location.href = "/"; }}>Cancel</button>
         </div>
 		<div id="notifications"></div>
       </form>

@@ -12,7 +12,7 @@ const FormInput = (props) => {
   return (
 		<div className="input-group mb-3">
 		<span className="input-group-text">{label}</span>
-		<input className="form-control"
+		<input className="form-control" id={id}
 		{...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
