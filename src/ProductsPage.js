@@ -51,6 +51,36 @@ const handleMassDeleteClick = () => {
   }
 }
 
+function getType(product) {
+  switch (product.productType) {
+    case 'DVD':
+      return 'Size';
+    case 'Book':
+      return 'Weight';
+    case 'Furniture':
+      return 'Dimensions';
+    default:
+      return '';
+  }
+}
+
+
+function getImageSrc(product) {
+  switch (product.productType) {
+    case "DVD":
+      return "DVD.jpg";
+      break;
+    case "Book":
+      return "Book.jpg";
+      break;
+    case "Furniture":
+      return "Furniture.jpg";
+      break;
+    default:
+      return "";
+  }
+}
+
   return (
     <div className="productsPage">
 	
@@ -75,8 +105,7 @@ const handleMassDeleteClick = () => {
 				
 				<div className="col-md-4 mt-5" key={product.sku}>
 					<div className="card">
-						<img src="https://i.tribune.com.pk/media/images/1692679-books-1524459622/1692679-books-1524459622.jpg"
-						alt="#" className="card-img-top w-100"/>
+						<img src={getImageSrc(product)} alt={product.name} className="card-img-top w-100"/>
 						<div className="card-body">
 							<div className="form-check m-2">
 								<input
@@ -91,12 +120,12 @@ const handleMassDeleteClick = () => {
 								Select
 								</label>
 							</div>
-							<h2 className="card-title">Product Name</h2>
+							<h2 className="card-title">{product.name}</h2>
 							<div className="d-flix justify-content-between">
-								<p className="card-text mr-4 text-success price">$99.75</p>
+								<p className="card-text mr-4 text-success price">${product.price}</p>
 							</div>
-							<p className="card-text text-muted">SKU:<strong>L898H463</strong></p>
-							<p className="card-text text-muted">Size:<strong>19M</strong></p>
+							<p className="card-text text-muted">SKU:<strong>{product.sku}</strong></p>
+							<p className="card-text text-muted">{getType(product)}: <strong>{product.value}</strong></p>
 						</div>
 					</div>
 				</div>
