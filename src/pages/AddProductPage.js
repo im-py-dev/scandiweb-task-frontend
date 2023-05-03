@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./App.css";
-import FormInput from "./components/FormInput";
+import FormInput from "../components/FormInput";
 
 
 const AddProduct = () => {

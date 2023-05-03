@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductsPage from './ProductsPage';
-import AddProduct from './AddProductPage';
+import ProductsPage from './pages/ProductsPage';
+import AddProduct from './pages/AddProductPage';
 import Footer from "./components/footer";
 import Header from "./components/header";
+import "./styles/App.css";
 
 function App() {
   return (
