@@ -12,7 +12,7 @@ function Header() {
 		<h1 className="scandiweb">
 			<div className="text-center">
 				<span>Welcome To </span>
-				<a href="#" aria-label="home">scandiweb</a>
+				<a id="scandiweb-logo" href="#" aria-label="home">scandiweb</a>
 			</div>
 		</h1>
 	</div>

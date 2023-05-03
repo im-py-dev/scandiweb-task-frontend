@@ -49,3 +49,14 @@ line-height: 24px;
 color: #e04f4f;
 text-decoration: none;
 }
+
+#scandiweb-logo {
+    display: inline-block;
+    transition: transform 1s cubic-bezier(0.86, 0.21, 0.22, 0.72);
+    opacity: 0.9;
+}
+
+#scandiweb-logo:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}
