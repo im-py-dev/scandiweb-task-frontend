@@ -87,11 +87,11 @@ function getImageSrc(product) {
 		<div className="row p-3 m-0 align-items-center">
 			<h1 className="col-sm-6 col-md-8">Products List</h1>
 			<div className="col-sm-6 col-md-4">
-				<a href="/add-product" type="button" className="btn btn-lg btn-dark d-none d-lg-inline-block mr-2">Add Product</a>
-				<a href="/add-product" className="btn btn-lg btn-dark d-inline-block d-lg-none mr-2">Add</a>
+				<a href="/add-product" type="button" className="btn btn-lg btn-dark d-none d-lg-inline-block mr-2">ADD</a>
+				<a href="/add-product" className="btn btn-lg btn-dark d-inline-block d-lg-none mr-2">ADD</a>
 				
-				<button onClick={handleMassDeleteClick} type="button" className="btn btn-lg btn-danger d-none d-lg-inline-block">Mass Delete</button>
-				<button onClick={handleMassDeleteClick} type="button" className="btn btn-lg btn-danger d-inline-block d-lg-none">Delete</button>
+				<button onClick={handleMassDeleteClick} type="button" className="btn btn-lg btn-danger d-none d-lg-inline-block">MASS DELETE</button>
+				<button onClick={handleMassDeleteClick} type="button" className="btn btn-lg btn-danger d-inline-block d-lg-none">MASS DELETE</button>
 			</div>
 		</div>
 		
@@ -124,7 +124,7 @@ function getImageSrc(product) {
 							<div className="d-flix justify-content-between">
 								<p className="card-text mr-4 text-success price">${product.price}</p>
 							</div>
-							<p className="card-text text-muted">SKU:<strong>{product.sku}</strong></p>
+							<p className="card-text text-muted">SKU: <strong>{product.sku}</strong></p>
 							<p className="card-text text-muted">{getType(product)}: <strong>{product.value}</strong></p>
 						</div>
 					</div>
