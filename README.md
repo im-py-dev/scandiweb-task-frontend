@@ -16,6 +16,7 @@ This directory is the frontend of the test, I used vercel for deployment [Previe
   <img src="https://user-images.githubusercontent.com/94250125/236553959-64dd120a-3e1c-49d3-938b-b5ace0ea62f8.svg" alt="HTML 5" width="75" height="50">
   <img src="https://user-images.githubusercontent.com/94250125/236554000-46cb63a8-2be7-4f0d-85c6-04891eb100de.svg" alt="CSS 3" width="75" height="50">
   <img src="https://user-images.githubusercontent.com/94250125/236554042-54357f43-738a-45ff-ae53-d0a79e619c87.svg" alt="JavaScript" width="75" height="50">
+  <img src="https://user-images.githubusercontent.com/94250125/236560798-048e2e0c-9b9e-416d-9661-323d12a981be.svg" alt="Bootstrap 5" width="75" height="50">
   <img src="https://user-images.githubusercontent.com/94250125/236553574-1744cd9c-2110-4b34-ac32-b63c766a6b1f.svg" alt="React" width="75" height="50">
   <img src="https://user-images.githubusercontent.com/94250125/236558962-d80d0c76-1704-4cb0-9744-21e0289a3cf7.svg" alt="Vercel" width="75" height="50">
 </div>
