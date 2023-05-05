@@ -171,7 +171,7 @@ function getAlertClass(status) {
 		</h2>
 
 		<div className="row">
-			<div className="col">
+			<div className="col-sm-12">
 				<FormInput
 				id="sku"
 				name="sku"
@@ -187,7 +187,7 @@ function getAlertClass(status) {
 				/>
 			</div>
 			
-			<div className="col">
+			<div className="col-sm-12">
 				<FormInput
 				id="name"
 				name="name"
@@ -204,7 +204,7 @@ function getAlertClass(status) {
 		</div>
 		
 		<div className="row">
-			<div className="col">
+			<div className="col-sm-12">
 				<FormInput
 				id="price"
 				name="price"
@@ -223,7 +223,7 @@ function getAlertClass(status) {
 				/>
 			</div>
 			
-			<div className="col">
+			<div className="col-sm-12">
 				<div className="input-group mb-2">
 					<label className="input-group-text" htmlFor="productType">Product Type</label>
 					<select className="form-select"
