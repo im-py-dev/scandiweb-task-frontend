@@ -32,7 +32,7 @@ const handleMassDeleteClick = () => {
 	  
     fetch('https://scandiweb.technosteps.com/api/delete_products.php', {
       method: 'DELETE',
-      body: JSON.stringify(formData)
+      body: formData
     })
     .then(response => {
       if (response.ok) {
