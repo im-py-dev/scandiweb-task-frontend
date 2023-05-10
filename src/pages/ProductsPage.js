@@ -31,7 +31,7 @@ const handleMassDeleteClick = () => {
     formData.append('skusToDelete', JSON.stringify(skusToDelete));
 
     fetch('https://scandiweb.technosteps.com/api/delete_products.php', {
-      method: 'POST',
+      method: 'DELETE',
       body: formData
     })
     .then(response => {
