@@ -162,7 +162,7 @@ function getAlertClass(status) {
 
 		<div className="container">
 			<div className="row justify-content-center">
-			<div className="col-sm-12 col-md-8 my-4">
+			<div className="col-sm-12 col-lg-8 my-4">
 	  <form id="product_form" className="w-100 p-4 border rounded" onSubmit={handleSubmit}>
         <h2>
 			<div className="text-center mb-4">
@@ -171,7 +171,7 @@ function getAlertClass(status) {
 		</h2>
 
 		<div className="row">
-			<div className="col">
+			<div className="col-sm-12 col-md-6">
 				<FormInput
 				id="sku"
 				name="sku"
@@ -187,7 +187,7 @@ function getAlertClass(status) {
 				/>
 			</div>
 			
-			<div className="col">
+			<div className="col-sm-12 col-md-6">
 				<FormInput
 				id="name"
 				name="name"
@@ -204,7 +204,7 @@ function getAlertClass(status) {
 		</div>
 		
 		<div className="row">
-			<div className="col">
+			<div className="col-sm-12 col-md-6">
 				<FormInput
 				id="price"
 				name="price"
@@ -223,7 +223,7 @@ function getAlertClass(status) {
 				/>
 			</div>
 			
-			<div className="col">
+			<div className="col-sm-12 col-md-6">
 				<div className="input-group mb-2">
 					<label className="input-group-text" htmlFor="productType">Product Type</label>
 					<select className="form-select"
@@ -244,7 +244,7 @@ function getAlertClass(status) {
           )}
 		  
 		</div>
-	  
+
 	  {product.productType === 'DVD' && (
         <div>
           <FormInput
