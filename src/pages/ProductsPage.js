@@ -25,24 +25,25 @@ function ProductList() {
   }
 
 const handleMassDeleteClick = () => {
-	console.log(skusToDelete.length);
+  console.log(skusToDelete.length);
   if (skusToDelete.length > 0) {
-    const formData = new FormData();
-    formData.append('skusToDelete', JSON.stringify(skusToDelete));
+    const jsonData = { "skusToDelete": skusToDelete };
 
-    fetch('https://scandiweb.technosteps.com/api/delete_products.php', {
-      method: 'POST',
-      body: formData
-    })
+  axios.delete('https://scandiweb.technosteps.com/api/delete_products.php', {
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  data: skusToDelete
+})
     .then(response => {
-      if (response.ok) {
-		// remove deleted products from the products array
-		setProducts(prevProducts => prevProducts.filter(product => !skusToDelete.includes(product.sku)));
+      if (response.status == 204) {
+        // remove deleted products from the products array
+        setProducts(prevProducts => prevProducts.filter(product => !skusToDelete.includes(product.sku)));
 
-		// reset the skusToDelete array
-		setSkusToDelete([]);
-		
-		// window.location.reload();
+        // reset the skusToDelete array
+        setSkusToDelete([]);
+        
+        // window.location.reload();
       } else {
         throw new Error('Error deleting products');
       }
@@ -50,6 +51,7 @@ const handleMassDeleteClick = () => {
     .catch(err => console.log(err));
   }
 }
+
 
 function getType(product) {
   switch (product.productType) {
